@@ -133,6 +133,7 @@ nav ul li a.active {
 section {
     height: 100vh;
     min-height: 100vh;
+    background: #030c15;
 }
 
 .home {
@@ -233,7 +234,7 @@ span {
 }
 
 .btn-group a:nth-of-type(2) {
-    background-color: #080808;
+    background-color: #030c15;
     color: rgb(93, 228, 243);
     box-shadow: 0 0 25px transparent;
     border: 2px solid rgb(93, 228, 243);
@@ -242,22 +243,18 @@ span {
 .btn-group a:nth-of-type(2):hover {
     box-shadow: 0 0 25px rgb(93, 228, 243);
     background-color: rgb(93, 228, 243);
-    color: black;
+    color: #030c15;
 }
 
 .text-animation {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 .text-animation span {
     position: relative;
     color: rgb(20, 157, 221);
-    display: inline-block;
 }
 
 .text-animation span::before {
@@ -268,18 +265,18 @@ span {
 
 .text-animation span::after {
     content: "";
-    background-color: #080808;
+    background-color: #030c15;
     position: absolute;
-    width: 100%;
+    width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid rgb(20, 157, 221);
+    border-left: 3px solid #030c15;
     right: -8px;
-    animation: cursor 0.2s infinite, typing 4s steps(14) infinite alternate;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite alternate;
 }
 
 @keyframes cursor {
-    50% {
-        border-left-color: transparent;
+    to {
+        border-left: 2px solid rgb(93, 228, 243);
     }
 }
 
@@ -307,11 +304,29 @@ span {
 }
 
 @keyframes typing {
-    0% {
-        width: 0;
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0%;
     }
-    100% {
-        width: 100%;
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    55%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
     }
 }
 
@@ -321,7 +336,7 @@ span {
 #about {
     height: fit-content;
     min-height: fit-content;
-    background: #02060A;
+    background: #030910;
     padding: 50px 0;
     color: #ababab;
 }
@@ -363,6 +378,7 @@ span {
 }
 
 .about-col-2 p {
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     text-align: justify;
     font-size: 1.8rem;
@@ -386,6 +402,7 @@ span {
 }
 
 .rows {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100px;
     padding: 18px;
 }
