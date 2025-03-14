@@ -33,6 +33,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -121,6 +122,16 @@ nav ul li a.active {
     text-shadow: 0 0 12px rgb(93, 228, 243);
 }
 
+
+/* Navbar when scrolled */
+
+#header.scrolled {
+    background: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+}
+
 #menu-icon {
     font-size: 3.6rem;
     color: rgb(93, 228, 243);
@@ -170,7 +181,7 @@ span {
 }
 
 .home-content h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-top: 1.5rem;
     font-weight: 700;
     line-height: 1;
@@ -366,7 +377,7 @@ span {
 
 .subtitle {
     font-size: 80px;
-    font-weight: 600;
+    /* font-weight: 600; */
     color: #fff;
 }
 
@@ -433,15 +444,13 @@ h6 {
 }
 
 .education {
-    padding: 100px 15px;
     background: #030c15;
     max-height: 100vh;
     height: 100vh;
-    margin-bottom: 20px;
 }
 
 .education h2 {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .timeline-items {
@@ -468,7 +477,7 @@ h6 {
 }
 
 .timeline-item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .timeline-item:nth-child(odd) {
@@ -539,4 +548,101 @@ h6 {
 ::-webkit-scrollbar-track {
     background-color: #030910;
     width: 50px;
+}
+
+
+/* skills session */
+
+.skills-section {
+    background-color: #030910;
+    padding: 50px 50px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.skills-title {
+    font-size: 80px;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Marquee Container */
+
+.skills-container {
+    margin-top: 10%;
+    white-space: nowrap;
+    position: relative;
+    width: 95%;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+
+/* Scrolling Effect */
+
+.skills-marquee {
+    display: flex;
+    animation: marquee 15s linear infinite;
+    width: max-content;
+}
+
+.skills-list {
+    display: flex;
+    gap: 30px;
+}
+
+.skill-card {
+    background: #030910;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(13, 109, 153), 0 0 30px rgb(7, 59, 84);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.2rem;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.skill-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+
+/* Hover Effect */
+
+.skill-card:hover {
+    transform: scale(1.2);
+}
+
+
+/* Marquee Animation */
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Pause Animation on Hover */
+
+.skills-marquee:hover {
+    animation-play-state: paused;
 }

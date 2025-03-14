@@ -17,11 +17,12 @@
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
-        <nav>
+        <nav class="scrolled">
             <ul>
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -50,14 +51,14 @@
 
 
     <!-- About Section -->
-    <div id="about" #about>
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
                     <img id="profileImage" src="images/profileImage.jpeg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
+                    <h1 class="subtitle" #about>About Me</h1>
                     <h2>I'm <span>Srujal Audarya!</span></h2>
                     <p>I am a BE student in the Computer Science and Engineering (CSE) branch at SSGMCE College. I am passionate about Android and web development and enjoy working on innovative solutions.</p>
                     <div class="about-details">
@@ -97,8 +98,8 @@
     </div>
 
     <!-- Education session -->
-    <section class="education" id="education" #education>
-        <h2 class="heading">Education</h2>
+    <section class="education" id="education">
+        <h2 class="heading" #education>Education</h2>
         <div class="timeline-items">
 
             <div class="timeline-item">
@@ -137,8 +138,44 @@
                 </div>
             </div>
         </div>
-    </section>
 
+        <section class="skills-section">
+            <h2 class="skills-title" #skills>Skills</h2>
+            <div class="skills-container">
+                <div class="skills-marquee">
+                    <div class="skills-list">
+                        <div class="skill-card"><img src="images/android.png" alt="Android">Android</div>
+                        <div class="skill-card"><img src="images/html.svg" alt="HTML">HTML</div>
+                        <div class="skill-card"><img src="images/css.svg" alt="CSS">CSS</div>
+                        <div class="skill-card"><img src="images/javascript.svg" alt="Javascript">Javascript</div>
+                        <div class="skill-card"><img src="images/java.svg" alt="Java">Java</div>
+                        <div class="skill-card"><img src="images/python.svg" alt="Python">Python</div>
+                        <div class="skill-card"><img src="images/c.svg" alt="C">C</div>
+                        <div class="skill-card"><img src="images/cpp.svg" alt="C++">C++</div>
+                        <div class="skill-card"><img src="images/mysql.svg" alt="MySQL">MySQL</div>
+                        <div class="skill-card"><img src="images/git.svg" alt="Git">Git</div>
+                        <div class="skill-card"><img src="images/bootstrap.svg" alt="Bootstrap">Bootstrap</div>
+                        <div class="skill-card"><img src="images/firebase.svg" alt="Firebase">Firebase</div>
+
+                        <!-- Repeat to create a loop -->
+                        <div class="skill-card"><img src="images/android.png" alt="Android">Android</div>
+                        <div class="skill-card"><img src="images/html.svg" alt="HTML">HTML</div>
+                        <div class="skill-card"><img src="images/css.svg" alt="CSS">CSS</div>
+                        <div class="skill-card"><img src="images/javascript.svg" alt="Javascript">Javascript</div>
+                        <div class="skill-card"><img src="images/java.svg" alt="Java">Java</div>
+                        <div class="skill-card"><img src="images/python.svg" alt="Python">Python</div>
+                        <div class="skill-card"><img src="images/c.svg" alt="C">C</div>
+                        <div class="skill-card"><img src="images/cpp.svg" alt="C++">C++</div>
+                        <div class="skill-card"><img src="images/mysql.svg" alt="MySQL">MySQL</div>
+                        <div class="skill-card"><img src="images/git.svg" alt="Git">Git</div>
+                        <div class="skill-card"><img src="images/bootstrap.svg" alt="Bootstrap">Bootstrap</div>
+                        <div class="skill-card"><img src="images/firebase.svg" alt="Firebase">Firebase</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
