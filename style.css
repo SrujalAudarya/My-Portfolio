@@ -1,0 +1,408 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+
+/* Header */
+
+
+/* Navbar */
+
+#header {
+    width: 100%;
+    background: black;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+/* Logo Styling */
+
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo span {
+    text-shadow: 0 0 25px rgb(19, 191, 210);
+}
+
+
+/* Navigation Menu */
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    /* Adjusted spacing */
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Navbar Hover Effect - Underline Expands from Center */
+
+nav ul li a::before {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(93, 228, 243);
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    transition: width 0.4s ease-in-out;
+}
+
+nav ul li a:hover::before,
+nav ul li a.active::before {
+    width: 100%;
+}
+
+
+/* Hover Text Glow Effect */
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: rgb(93, 228, 243);
+    text-shadow: 0 0 12px rgb(93, 228, 243);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: rgb(93, 228, 243);
+    display: none;
+}
+
+
+/*home*/
+
+section {
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10rem 12%;
+    width: 100%;
+}
+
+.home-content {
+    margin-top: 5%;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+span {
+    color: rgb(93, 228, 243);
+}
+
+.logo span {
+    color: rgb(93, 228, 243);
+}
+
+.home-content h3 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+
+.home-content h1 {
+    font-size: 7rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+    text-align: justify;
+}
+
+.home-img {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    margin-top: 5%;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgb(93, 228, 243);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgb(93, 228, 243);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: rgb(93, 228, 243);
+    box-shadow: 0 0 25px rgb(93, 228, 243);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    border: 2px solid transparent;
+    font-weight: 600;
+    letter-spacing: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 50px rgb(93, 228, 243);
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 20px;
+}
+
+.btn-group a:nth-of-type(2) {
+    background-color: #080808;
+    color: rgb(93, 228, 243);
+    box-shadow: 0 0 25px transparent;
+    border: 2px solid rgb(93, 228, 243);
+}
+
+.btn-group a:nth-of-type(2):hover {
+    box-shadow: 0 0 25px rgb(93, 228, 243);
+    background-color: rgb(93, 228, 243);
+    color: black;
+}
+
+.text-animation {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-animation span {
+    position: relative;
+    color: rgb(20, 157, 221);
+    display: inline-block;
+}
+
+.text-animation span::before {
+    content: "App Developer";
+    color: rgb(20, 157, 221);
+    animation: words 20s infinite;
+}
+
+.text-animation span::after {
+    content: "";
+    background-color: #080808;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: 3px solid rgb(20, 157, 221);
+    right: -8px;
+    animation: cursor 0.2s infinite, typing 4s steps(14) infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-left-color: transparent;
+    }
+}
+
+@keyframes words {
+    0%,
+    20% {
+        content: "Web Developer";
+    }
+    21%,
+    40% {
+        content: "Software Tester";
+    }
+    41%,
+    60% {
+        content: "App Developer";
+    }
+    61%,
+    80% {
+        content: "Web Developer";
+    }
+    81%,
+    100% {
+        content: "Software Tester";
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* About Section */
+
+#about {
+    height: fit-content;
+    min-height: fit-content;
+    background: #02060A;
+    padding: 50px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    padding: 20px 50px;
+}
+
+.about-col-1 img {
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    padding: 0 50px;
+}
+
+.subtitle {
+    font-size: 80px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about-col-2 h2 {
+    margin-top: 2%;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.about-col-2 p {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.about-col-2 span {
+    color: rgb(20, 157, 221);
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.column {
+    flex-basis: 45%;
+    margin: 0;
+    padding: 0;
+}
+
+.rows {
+    font-size: 100px;
+    padding: 18px;
+}
+
+.column-seperator {
+    width: 1.8px;
+    background: #0d6efd;
+    margin: 15px 10px;
+}
+
+strong {
+    font-weight: 800;
+    color: white;
+    margin: 0;
+}
+
+h6 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
