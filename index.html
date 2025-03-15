@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/97f4b108c4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -19,7 +20,7 @@
 
         <nav class="scrolled">
             <ul>
-                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -175,16 +176,27 @@
             </div>
         </section>
 
-        <section class="Services-section" id="services">
+        <section class="services-section" id="services">
             <h2 class="services-title">My Services</h2>
+            <p>Following are some services I offered!<br>App design, Web development, and photography with creativity and dedication.</p>
             <div class="container">
                 <div class="services-list">
-                    <div>
+                    <div class="service-card">
+                        <i class="fa-brands fa-app-store service-icon"></i>
+                        <h2>App Design</h2>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-code service-icon"></i>
                         <h2>Web Design</h2>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-camera service-icon"></i>
+                        <h2>Photography</h2>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <script src="script.js"></script>
 </body>
