@@ -218,43 +218,81 @@ span {
     box-shadow: 0 0 40px rgb(93, 228, 243);
 }
 
+.home-content .btn-group {
+    display: flex;
+    justify-content: space-between;
+    width: 405px;
+    height: 65px;
+}
+
 .btn {
-    display: inline-block;
-    padding: 1rem 2.8rem;
+    display: flex;
     background: rgb(93, 228, 243);
-    box-shadow: 0 0 25px rgb(93, 228, 243);
-    border-radius: 4rem;
-    font-size: 1.6rem;
+    box-shadow: 0 0 25px transparent;
     color: black;
     border: 2px solid transparent;
-    font-weight: 600;
-    letter-spacing: 600;
     cursor: pointer;
 }
 
 .btn:hover {
     transform: scale(1.05);
-    box-shadow: 50px rgb(93, 228, 243);
+    box-shadow: 0 0 25px rgb(93, 228, 243);
 }
 
-.btn-group {
-    display: flex;
+.btn-group a {
+    width: 180px;
+    height: 100%;
+    background: rgb(93, 228, 243);
+    border: 2px solid rgb(93, 228, 243);
+    border-radius: 8px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    margin-top: 20px;
+    font-size: 19px;
+    color: #030c15;
+    font-weight: 600;
+    letter-spacing: 1px;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
 }
 
-.btn-group a:nth-of-type(2) {
-    background-color: #030c15;
+.btn-group a:hover {
+    color: rgb(93, 228, 243);
+}
+
+.btn-group a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #030c15;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-group a:hover::before {
+    width: 100%;
+}
+
+.btn-group a:nth-child(2) {
+    background: transparent;
     color: rgb(93, 228, 243);
     box-shadow: 0 0 25px transparent;
     border: 2px solid rgb(93, 228, 243);
 }
 
-.btn-group a:nth-of-type(2):hover {
-    box-shadow: 0 0 25px rgb(93, 228, 243);
-    background-color: rgb(93, 228, 243);
+.btn-group a:nth-child(2)::before {
+    background: rgb(93, 228, 243);
     color: #030c15;
+}
+
+.btn-group a:nth-child(2):hover {
+    color: #030c15;
+    box-shadow: 0 0 25px rgb(93, 228, 243);
 }
 
 .text-animation {
@@ -345,11 +383,12 @@ span {
 /* About Section */
 
 #about {
-    height: fit-content;
-    min-height: fit-content;
+    height: 100vh;
+    min-height: 100vh;
     background: #030910;
     padding: 50px 0;
     color: #ababab;
+    overflow: hidden;
 }
 
 .row {
@@ -438,18 +477,18 @@ h6 {
 
 /* education session*/
 
-.heading {
+.education-title {
     font-size: 80px;
     text-align: center;
 }
 
-.education {
+.education-section {
     background: #030c15;
     max-height: 100vh;
     height: 100vh;
 }
 
-.education h2 {
+.education-section h2 {
     margin-bottom: 3rem;
 }
 
@@ -555,7 +594,7 @@ h6 {
 
 .skills-section {
     background-color: #030910;
-    padding: 50px 50px;
+    padding: 0px 50px;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -645,4 +684,30 @@ h6 {
 
 .skills-marquee:hover {
     animation-play-state: paused;
+}
+
+
+/* services session */
+
+.Services-section {
+    background-color: #030c15;
+    padding: 0px 50px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.services-title {
+    font-size: 80px;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }
