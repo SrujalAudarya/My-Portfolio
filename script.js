@@ -22,3 +22,6 @@ window.addEventListener("scroll", function() {
         header.classList.remove("scrolled");
     }
 });
+
+
+document.getElementById("year").textContent = new Date().getFullYear();

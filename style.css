@@ -208,14 +208,14 @@ span {
     width: 100%;
     max-width: 450px;
     border-radius: 50%;
-    box-shadow: 0 0 25px rgb(93, 228, 243);
+    box-shadow: 0 0 25px rgba(58, 148, 158, 0.5), 0 0 50px rgba(113, 232, 246, 0.5);
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
 
 .home-img img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 40px rgb(93, 228, 243);
+    box-shadow: 0 0 25px rgba(58, 148, 158, 0.5), 0 0 50px rgb(93, 228, 243, 0.7);
 }
 
 .home-content .btn-group {
@@ -687,10 +687,26 @@ h6 {
 }
 
 
-/* services session */
+/* project-section  */
 
 .services-section {
     background-color: #030c15;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 80px;
+    padding: 5% 10px;
+    color: white;
+    text-align: center;
+}
+
+
+/* services session */
+
+.services-section {
+    background-color: #030910;
     padding: 10px 30px;
     text-align: center;
     font-size: 25px;
@@ -756,4 +772,23 @@ h6 {
     font-weight: 700;
     color: #fff;
     margin-bottom: 20px;
+}
+
+
+/* footer-section  */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #030c15;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+}
+
+footer span {
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
 }
