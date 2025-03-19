@@ -1112,6 +1112,9 @@
         .home {
             flex-direction: column-reverse;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 6rem 5%;
         }
         .home-content {
@@ -1140,6 +1143,9 @@
         /* Footer Fix */
         footer {
             font-size: 18px;
+        }
+        h2 {
+            font-size: 2.6rem;
         }
     }
     
