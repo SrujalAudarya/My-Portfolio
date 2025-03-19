@@ -10,18 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/97f4b108c4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            emailjs.init("cVYouWpbZYdAU-fsw"); // Replace with your actual EmailJS User ID
+        });
+    </script>
 </head>
 
 <body>
     <!-- ----------nav-section---------- -->
     <div id="header">
         <a href="#home" class="logo">Srujal <span>Audarya</span></a>
-
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <nav class="scrolled">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <!-- Menu Icon Here -->
+        <nav id="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -31,6 +37,7 @@
             </ul>
         </nav>
     </div>
+
 
     <section class="home" id="home">
         <div class="home-content">
@@ -258,10 +265,10 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="name" placeholder="Enter Your Name" required>
-                        <input type="email" name="email" placeholder="Enter Your Email" required>
-                        <textarea rows="6" name="message" placeholder="Enter Your Message"></textarea>
+                    <form id="contact-form">
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                        <textarea rows="6" name="message" id="message" placeholder="Enter Your Message" required></textarea>
                         <button type="submit" class="submit-btn">Submit <i class="fa-regular fa-paper-plane"></i></button>
                     </form>
                 </div>

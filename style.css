@@ -121,6 +121,7 @@
     #menu-icon {
         font-size: 3.6rem;
         color: rgb(93, 228, 243);
+        cursor: pointer;
         display: none;
     }
     /*home*/
@@ -1010,4 +1011,164 @@
     
     footer span:hover {
         color: rgb(19, 191, 210);
+    }
+    
+    @media(max-width:1285px) {
+        html {
+            font-size: 55%;
+        }
+        .project-list {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* More flexible */
+        }
+    }
+    
+    @media(max-width:991px) {
+        header {
+            padding: 2rem 3%;
+        }
+        section {
+            padding: 8rem 5% 2rem;
+        }
+        nav ul {
+            gap: 20px;
+        }
+        .timeline-items::before {
+            left: 7px;
+        }
+        .timeline-item:nth-child(odd) {
+            padding-right: 0;
+            text-align: left;
+        }
+        .timeline-item:nth-child(odd),
+        .timeline-item:nth-child(even) {
+            padding-left: 30px;
+        }
+        .timeline-dot {
+            left: 0;
+        }
+        .services-section {
+            padding-bottom: 7rem;
+        }
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .contact-left,
+        .contact-right {
+            width: 90%;
+            padding: 0 5%;
+        }
+        .contact-right form {
+            width: 100%;
+            text-align: left;
+        }
+        .submit-btn {
+            display: inline-block;
+            margin-left: 0;
+        }
+        /* Footer */
+        footer {
+            padding: 2rem 3%;
+        }
+    }
+    
+    @media(max-width:895px) {
+        #menu-icon {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 25px;
+            z-index: 1001;
+        }
+        nav {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 50%;
+            padding: 1rem 3%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(20px);
+            border-bottom-left-radius: 2rem;
+            border-left: 2px solid #030c15;
+            border-bottom: 2px solid #030c15;
+            display: none;
+        }
+        nav .active {
+            display: block;
+        }
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+        nav a {
+            display: block;
+            font-size: 2rem;
+            margin: 2rem 0;
+            color: #fff;
+        }
+        .home {
+            flex-direction: column-reverse;
+            text-align: center;
+            margin: 6rem 5%;
+        }
+        .home-content {
+            max-width: 100%;
+        }
+        .home-content h3 {
+            font-size: 2.6rem;
+        }
+        .home-content h1 {
+            font-size: 8rem;
+            margin-top: 3rem;
+        }
+        .home-img img {
+            width: 70vw;
+        }
+        .services-list {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        /* Project Section */
+        .project-list {
+            grid-template-columns: repeat(1, 1fr);
+            /* 1 column layout */
+        }
+        /* Footer Fix */
+        footer {
+            font-size: 18px;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        html {
+            font-size: 50%;
+        }
+        .home-content h1 {
+            font-size: 6rem;
+        }
+        .home-content h3 {
+            font-size: 2.2rem;
+        }
+        .skills-marquee {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project-list {
+            padding: 0 5%;
+        }
+        .contact-left,
+        .contact-right {
+            width: 100%;
+            padding: 0 5%;
+        }
+        .submit-btn {
+            width: 100%;
+            /* Full-width button on small screens */
+            text-align: center;
+        }
     }
