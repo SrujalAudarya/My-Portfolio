@@ -469,6 +469,7 @@
         background-color: #030c15;
         padding: 50px 0;
         text-align: center;
+        height: 100%;
     }
     
     .education-section h2 {
@@ -662,6 +663,7 @@
         background-color: #030c15;
         padding: 50px 30px;
         text-align: center;
+        height: 100%;
     }
     
     .project-title {
@@ -786,6 +788,7 @@
         font-weight: 500;
         color: #ababab;
         word-spacing: 5px;
+        height: 100%;
     }
     /* Title Styling */
     
@@ -1021,6 +1024,10 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             /* More flexible */
         }
+        section {
+            padding: 8rem 5% 2rem;
+            height: 100%;
+        }
     }
     
     @media(max-width:991px) {
@@ -1029,6 +1036,7 @@
         }
         section {
             padding: 8rem 5% 2rem;
+            height: 100%;
         }
         nav ul {
             gap: 20px;

@@ -1,0 +1,65 @@
+/* Notification System Styles */
+.notification-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.notification {
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  max-width: 300px;
+}
+
+.notification.success {
+  background-color: rgb(93, 228, 243);
+  color: #030c15;
+}
+
+.notification.error {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.notification.info {
+  background-color: #4dabf7;
+  color: #fff;
+}
+
+/* Animation for notifications */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.notification-enter {
+  animation: slideIn 0.3s forwards;
+}
+
+.notification-exit {
+  animation: slideOut 0.3s forwards;
+}
