@@ -22,6 +22,11 @@
     }
 }
 
+section {
+    height: 100vh;
+    padding: 5px;
+}
+
 
 /* Large Devices (desktops, 992px to 1199px) */
 
@@ -417,7 +422,7 @@
     /* Skills section */
     .skill-card {
         width: 150px;
-        height: 150px;
+        height: auto;
         margin: 0.8rem;
         padding: 15px;
     }
@@ -468,6 +473,8 @@
     }
     .personal-details {
         font-size: 18px;
+        align-items: start;
+        text-align: left;
     }
     .submit-btn {
         width: 100%;
