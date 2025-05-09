@@ -22,11 +22,6 @@
     }
 }
 
-section {
-    height: 100vh;
-    padding: 5px;
-}
-
 
 /* Large Devices (desktops, 992px to 1199px) */
 
@@ -136,6 +131,14 @@ section {
     nav ul li a {
         font-size: 16px;
     }
+    /* Contact section adjustments */
+    .contact-section .row {
+        flex-direction: column-reverse;
+    }
+    .contact-left {
+        text-align: left;
+        margin-top: 40px;
+    }
 }
 
 
@@ -208,28 +211,31 @@ section {
     .contact-title {
         font-size: 50px;
     }
-    /* About section adjustments */
+    /* About section adjustments - UPDATED */
     #about {
         padding: 80px 15px 30px;
         height: auto;
         min-height: auto;
     }
     .about-col-1 {
+        order: 2;
+        /* Move image after title */
         padding: 10px;
     }
-    .about-col-1,
     .about-col-2 {
-        flex-basis: 100%;
-        margin-bottom: 30px;
+        order: 1;
+        /* Move title first */
+        margin-bottom: 20px;
         padding: 0 20px;
+    }
+    .about-col-2 .subtitle {
+        text-align: center;
+        margin-bottom: 20px;
     }
     .about-col-1 img {
         width: 60%;
-        margin: 0 auto;
+        margin: 0 auto 20px;
         display: block;
-    }
-    .about-col-2 {
-        padding: 10px;
     }
     .row {
         flex-direction: column;
@@ -242,23 +248,41 @@ section {
         height: 2px;
         margin: 20px 0;
     }
-    /* Project section */
+    /* Project section - UPDATED */
     .project-list {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+    .project-card {
+        max-width: 400px;
+        margin: 0 auto;
+        height: auto;
+    }
+    .project-img {
+        height: 200px;
+        object-fit: cover;
     }
     /* Services section */
     .services-list {
         flex-direction: column;
         gap: 30px;
     }
-    /* Contact section */
-    .contact-left,
+    /* Contact section - UPDATED */
+    .contact-section .row {
+        flex-direction: column-reverse;
+    }
+    .contact-left {
+        flex-basis: 100%;
+        text-align: left;
+        margin-top: 40px;
+    }
     .contact-right {
         flex-basis: 100%;
     }
     .social-media {
         margin-left: 0;
+        margin-bottom: 30px;
+        text-align: left;
     }
     .contact-left p {
         margin-left: 0;
@@ -272,6 +296,21 @@ section {
     }
     h6 {
         font-size: 1.2rem;
+    }
+    /* Skills section - UPDATED */
+    .skills-section {
+        padding: 60px 15px;
+        height: auto;
+    }
+    .skills-container {
+        width: 100%;
+        overflow: hidden;
+        padding: 10px 0;
+    }
+    .skill-card {
+        width: 150px;
+        height: 150px;
+        margin: 0.8rem;
     }
 }
 
@@ -365,26 +404,44 @@ section {
     .contact-title {
         font-size: 40px;
     }
-    /* About section adjustments */
+    /* About section adjustments - UPDATED */
     #about {
         padding: 70px 10px 20px;
+        height: auto;
+        min-height: auto;
     }
-    .about-col-1,
-    .about-col-2 {
+    .about-col-1 {
+        order: 2;
+        /* Move image after title */
         flex-basis: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         padding: 0 15px;
     }
+    .about-col-2 {
+        order: 1;
+        /* Move title first */
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+    .about-col-2 .subtitle {
+        text-align: center;
+        margin-bottom: 15px;
+    }
     .about-col-1 img {
-        width: 80%;
-        margin: 0 auto;
+        width: 70%;
+        max-width: 250px;
+        margin: 0 auto 20px;
         display: block;
     }
     .about-col-2 h2 {
         font-size: 2rem;
+        text-align: center;
     }
     .about-col-2 p {
         font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
     }
     .row {
         flex-direction: column;
@@ -419,30 +476,51 @@ section {
         padding: 20px;
         border-radius: 2rem;
     }
-    /* Skills section */
-    .skill-card {
-        width: 150px;
+    /* Skills section - UPDATED */
+    .skills-section {
+        padding: 50px 10px;
         height: auto;
-        margin: 0.8rem;
+        min-height: auto;
+    }
+    .skills-container {
+        width: 100%;
+        overflow: hidden;
+        padding: 5px 0;
+        margin-top: 20px;
+    }
+    .skills-marquee {
+        width: 100%;
+    }
+    .skill-card {
+        width: 130px;
+        height: 130px;
+        margin: 0.6rem;
         padding: 15px;
     }
     .skill-card img {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
-    /* Project section */
+    /* Project section - UPDATED */
+    .project-section {
+        padding: 40px 15px;
+    }
     .project-list {
         grid-template-columns: 1fr;
         gap: 25px;
-        margin-top: 40px;
-        padding: 0;
+        margin-top: 30px;
+    }
+    .project-card {
+        max-width: 300px;
+        margin: 0 auto;
+        height: auto;
     }
     .project-card h2 {
         font-size: 22px;
     }
     .project-img {
-        height: 200px;
-        font-size: 50px;
+        height: 180px;
+        object-fit: cover;
     }
     .see-more {
         padding: 12px 30px;
@@ -458,23 +536,32 @@ section {
         width: 100%;
         padding: 30px;
     }
-    /* Contact section */
+    /* Contact section - UPDATED */
+    .contact-section {
+        padding: 40px 15px;
+    }
+    .contact-section .row {
+        flex-direction: column-reverse;
+    }
     .contact-left,
     .contact-right {
         flex-basis: 100%;
         padding: 0 15px;
     }
+    .contact-right {
+        margin-bottom: 30px;
+    }
     .social-media {
-        margin-left: 0;
-        margin-top: 30px;
+        margin: 0 0 20px 0;
+        text-align: left;
     }
     .contact-left p {
         margin-left: 0;
+        text-align: left;
+        margin-top: 15px;
     }
     .personal-details {
-        font-size: 18px;
-        align-items: start;
-        text-align: left;
+        font-size: 16px;
     }
     .submit-btn {
         width: 100%;
@@ -521,14 +608,14 @@ section {
         font-size: 35px;
     }
     .skill-card {
-        width: 130px;
-        height: 130px;
-        margin: 0.6rem;
-        padding: 12px;
+        width: 110px;
+        height: 110px;
+        margin: 0.5rem;
+        padding: 10px;
     }
     .skill-card img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
     /* Fix button group on small screens */
     .home-content .btn-group {
@@ -543,6 +630,13 @@ section {
     }
     .about-col-2 h2 {
         font-size: 1.8rem;
+    }
+    /* Project cards for very small screens */
+    .project-card {
+        max-width: 250px;
+    }
+    .project-img {
+        height: 150px;
     }
 }
 
@@ -562,6 +656,26 @@ section {
     }
     .home-img img {
         max-height: 200px;
+    }
+    /* About section in landscape */
+    #about {
+        padding: 30px 20px;
+    }
+    .about-col-1 img {
+        max-width: 150px;
+    }
+    /* Skills section in landscape */
+    .skills-section {
+        padding: 30px 15px;
+    }
+    .skill-card {
+        width: 100px;
+        height: 100px;
+        margin: 0.4rem;
+    }
+    .skill-card img {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -661,12 +775,18 @@ section {
         grid-template-columns: repeat(3, 1fr);
         height: auto;
     }
+    .project-card {
+        height: 100%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .project-list {
         grid-template-columns: repeat(2, 1fr);
         height: auto;
+    }
+    .project-card {
+        height: 100%;
     }
 }
 
@@ -683,9 +803,11 @@ section {
     .project-card {
         max-width: 400px;
         margin: 0 auto;
+        height: auto;
     }
     .project-img {
         height: 200px;
+        object-fit: cover;
     }
 }
 
@@ -696,6 +818,9 @@ section {
     .project-list {
         margin-top: 30px;
         gap: 30px;
+    }
+    .project-card {
+        height: auto;
     }
 }
 
@@ -800,7 +925,7 @@ section {
         padding: 50px 20px;
     }
     .contact-section .row {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .contact-right {
         margin-bottom: 40px;
@@ -808,7 +933,7 @@ section {
     }
     .contact-left {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     .contact-left p {
         margin-left: 0;
@@ -818,7 +943,8 @@ section {
     }
     .social-media {
         margin-left: 0;
-        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: left;
     }
 }
 

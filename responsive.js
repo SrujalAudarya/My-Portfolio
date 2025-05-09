@@ -102,34 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
 
-    // Active navigation highlighting based on scroll position
-    const sections = document.querySelectorAll("section")
-    const navLinks = document.querySelectorAll("header nav a")
-
-    if (sections.length > 0 && navLinks.length > 0) {
-        window.addEventListener("scroll", () => {
-            let current = ""
-            const scrollY = window.scrollY
-
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop - 150
-                const sectionHeight = section.offsetHeight
-                const sectionId = section.getAttribute("id")
-
-                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                    current = sectionId
-                }
-            })
-
-            navLinks.forEach((link) => {
-                link.classList.remove("active")
-                if (link.getAttribute("href").substring(1) === current) {
-                    link.classList.add("active")
-                }
-            })
-        })
-    }
-
     // Responsive form handling
     const contactForm = document.getElementById("contact-form")
 
@@ -179,6 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             } else {
                 // Fallback if EmailJS is not available
+                console.warn("EmailJS is not available. Using fallback.") // Added warning
                 setTimeout(() => {
                     showNotification("This is a demo. In a real environment, your message would be sent.", "info")
                     contactForm.reset()
