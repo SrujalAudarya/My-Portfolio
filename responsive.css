@@ -1,581 +1,838 @@
 /* Base Responsive CSS for Srujal's Portfolio */
 
+
 /* Extra Large Devices (large desktops, 1200px and up) */
+
 @media (min-width: 1200px) {
-  .home-content h1 {
-    font-size: 6rem;
-  }
-
-  .home-content h3 {
-    font-size: 3.5rem;
-  }
-
-  .home-img img {
-    max-width: 450px;
-  }
-
-  .project-list {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-  }
-
-  .services-list {
-    gap: 100px;
-  }
+    .home-content h1 {
+        font-size: 6rem;
+    }
+    .home-content h3 {
+        font-size: 3.5rem;
+    }
+    .home-img img {
+        max-width: 450px;
+    }
+    .project-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    .services-list {
+        gap: 100px;
+    }
 }
+
 
 /* Large Devices (desktops, 992px to 1199px) */
+
 @media (min-width: 992px) and (max-width: 1199px) {
-  html {
-    font-size: 90%;
-  }
-
-  .home-content h1 {
-    font-size: 5.5rem;
-  }
-
-  .home-img img {
-    max-width: 400px;
-  }
-
-  .project-list {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
-
-  .subtitle,
-  .education-title,
-  .skills-title,
-  .project-title,
-  .services-title,
-  .contact-title {
-    font-size: 70px;
-  }
-
-  .services-list {
-    gap: 60px;
-  }
+    html {
+        font-size: 90%;
+    }
+    .home-content h1 {
+        font-size: 5.5rem;
+    }
+    .home-img img {
+        max-width: 400px;
+    }
+    .project-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .subtitle,
+    .education-title,
+    .skills-title,
+    .project-title,
+    .services-title,
+    .contact-title {
+        font-size: 70px;
+    }
+    .services-list {
+        gap: 60px;
+    }
 }
+
 
 /* Medium Devices (tablets, 768px to 991px) */
+
 @media (min-width: 768px) and (max-width: 991px) {
-  html {
-    font-size: 80%;
-  }
-
-  #header {
-    padding: 1.5rem 5%;
-  }
-
-  .home {
-    padding: 8rem 5%;
-  }
-
-  .home-content {
-    max-width: 60%;
-  }
-
-  .home-content h1 {
-    font-size: 5rem;
-  }
-
-  .home-content h3 {
-    font-size: 2.8rem;
-  }
-
-  .home-img img {
-    max-width: 350px;
-  }
-
-  .home-content .btn-group {
-    width: 350px;
-  }
-
-  .subtitle,
-  .education-title,
-  .skills-title,
-  .project-title,
-  .services-title,
-  .contact-title {
-    font-size: 60px;
-  }
-
-  .project-list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-
-  .services-list {
-    gap: 40px;
-  }
-
-  /* Timeline adjustments */
-  .timeline-items::before {
-    left: 7px;
-  }
-
-  .timeline-item:nth-child(odd) {
-    padding-right: 0;
-    text-align: left;
-  }
-
-  .timeline-item:nth-child(odd),
-  .timeline-item:nth-child(even) {
-    padding-left: 37px;
-  }
-
-  .timeline-dot {
-    left: 0;
-  }
-
-  /* About section adjustments */
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-    margin-bottom: 30px;
-  }
-
-  .about-col-1 img {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .row {
-    flex-direction: column;
-  }
+    html {
+        font-size: 80%;
+    }
+    #header {
+        padding: 1.5rem 5%;
+    }
+    .home {
+        padding: 8rem 5%;
+    }
+    .home-content {
+        max-width: 60%;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-content h3 {
+        font-size: 2.8rem;
+    }
+    .home-img img {
+        max-width: 350px;
+    }
+    .home-content .btn-group {
+        width: 350px;
+    }
+    .subtitle,
+    .education-title,
+    .skills-title,
+    .project-title,
+    .services-title,
+    .contact-title {
+        font-size: 60px;
+    }
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .services-list {
+        gap: 40px;
+    }
+    /* Timeline adjustments */
+    .timeline-items::before {
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+    .timeline-dot {
+        left: 0;
+    }
+    /* About section adjustments */
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .about-col-1 img {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+    .row {
+        flex-direction: column;
+    }
+    /* Improve navigation on tablets */
+    nav ul {
+        gap: 15px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
 }
+
 
 /* Small Devices (landscape phones, 576px to 767px) */
+
 @media (min-width: 576px) and (max-width: 767px) {
-  html {
-    font-size: 70%;
-  }
-
-  #menu-icon {
-    display: block;
-    font-size: 3rem;
-  }
-
-  #navbar {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(10px);
-    padding: 2rem;
-    transition: 0.5s ease;
-    z-index: 1000;
-  }
-
-  #navbar.active {
-    right: 0;
-  }
-
-  #navbar ul {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .home {
-    flex-direction: column-reverse;
-    padding: 8rem 5% 2rem;
-    text-align: center;
-  }
-
-  .home-content {
-    max-width: 100%;
-    align-items: center;
-  }
-
-  .home-content h1 {
-    font-size: 4.5rem;
-    margin-top: 2rem;
-  }
-
-  .home-content h3 {
-    font-size: 2.5rem;
-  }
-
-  .home-content p {
-    text-align: center;
-  }
-
-  .home-img {
-    max-width: 100%;
-    margin-bottom: 3rem;
-  }
-
-  .home-img img {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  .home-content .btn-group {
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .subtitle,
-  .education-title,
-  .skills-title,
-  .project-title,
-  .services-title,
-  .contact-title {
-    font-size: 50px;
-  }
-
-  /* About section adjustments */
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-    margin-bottom: 30px;
-    padding: 0 20px;
-  }
-
-  .about-col-1 img {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .about-details {
-    flex-direction: column;
-  }
-
-  .column-seperator {
-    width: 100%;
-    height: 2px;
-    margin: 20px 0;
-  }
-
-  /* Project section */
-  .project-list {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  /* Services section */
-  .services-list {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  /* Contact section */
-  .contact-left,
-  .contact-right {
-    flex-basis: 100%;
-  }
-
-  .social-media {
-    margin-left: 0;
-  }
-
-  .contact-left p {
-    margin-left: 0;
-  }
+    html {
+        font-size: 70%;
+    }
+    #menu-icon {
+        display: block;
+        font-size: 3rem;
+    }
+    #navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        transition: 0.5s ease;
+        z-index: 1000;
+    }
+    #navbar.active {
+        right: 0;
+    }
+    #navbar ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .home {
+        flex-direction: column-reverse;
+        padding: 8rem 5% 2rem;
+        text-align: center;
+    }
+    .home-content {
+        max-width: 100%;
+        align-items: center;
+    }
+    .home-content h1 {
+        font-size: 4.5rem;
+        margin-top: 2rem;
+    }
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+    .home-content p {
+        text-align: center;
+    }
+    .home-img {
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+    .home-img img {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .home-content .btn-group {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+    .subtitle,
+    .education-title,
+    .skills-title,
+    .project-title,
+    .services-title,
+    .contact-title {
+        font-size: 50px;
+    }
+    /* About section adjustments */
+    #about {
+        padding: 80px 15px 30px;
+        height: auto;
+        min-height: auto;
+    }
+    .about-col-1 {
+        padding: 10px;
+    }
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+    .about-col-1 img {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+    .about-col-2 {
+        padding: 10px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .about-details {
+        flex-direction: column;
+    }
+    .column-seperator {
+        width: 100%;
+        height: 2px;
+        margin: 20px 0;
+    }
+    /* Project section */
+    .project-list {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    /* Services section */
+    .services-list {
+        flex-direction: column;
+        gap: 30px;
+    }
+    /* Contact section */
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+    .social-media {
+        margin-left: 0;
+    }
+    .contact-left p {
+        margin-left: 0;
+    }
+    .about-col-2 p {
+        font-size: 1.4rem;
+    }
+    .rows {
+        font-size: 16px;
+        padding: 10px;
+    }
+    h6 {
+        font-size: 1.2rem;
+    }
 }
+
 
 /* Extra Small Devices (portrait phones, less than 576px) */
+
 @media (max-width: 575px) {
-  html {
-    font-size: 60%;
-  }
-
-  #header {
-    padding: 1.2rem 5%;
-  }
-
-  .logo {
-    font-size: 1.8rem;
-  }
-
-  #menu-icon {
-    display: block;
-    font-size: 2.8rem;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-
-  #navbar {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    width: 80%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(10px);
-    padding: 2rem;
-    transition: 0.5s ease;
-    z-index: 1000;
-  }
-
-  #navbar.active {
-    right: 0;
-  }
-
-  #navbar ul {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .home {
-    flex-direction: column-reverse;
-    padding: 6rem 5% 2rem;
-    text-align: center;
-  }
-
-  .home-content {
-    max-width: 100%;
-    align-items: center;
-  }
-
-  .home-content h1 {
-    font-size: 3.8rem;
-    margin-top: 2rem;
-  }
-
-  .home-content h3 {
-    font-size: 2.2rem;
-  }
-
-  .text-animation {
-    min-width: 220px;
-    font-size: 2.2rem;
-  }
-
-  .home-content p {
-    text-align: center;
-    font-size: 1.4rem;
-  }
-
-  .home-img {
-    max-width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .home-img img {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .home-content .btn-group {
-    width: 100%;
-    height: 50px;
-    flex-direction: column;
-    gap: 15px;
-    height: auto;
-  }
-
-  .btn-group a {
-    width: 100%;
-    height: 50px;
-  }
-
-  .subtitle,
-  .education-title,
-  .skills-title,
-  .project-title,
-  .services-title,
-  .contact-title {
-    font-size: 40px;
-  }
-
-  /* About section adjustments */
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-    margin-bottom: 30px;
-    padding: 0 15px;
-  }
-
-  .about-col-1 img {
-    width: 80%;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .about-col-2 h2 {
-    font-size: 2rem;
-  }
-
-  .about-col-2 p {
-    font-size: 1.5rem;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .about-details {
-    flex-direction: column;
-  }
-
-  .column-seperator {
-    width: 100%;
-    height: 2px;
-    margin: 15px 0;
-  }
-
-  .rows {
-    padding: 10px;
-  }
-
-  /* Timeline adjustments */
-  .timeline-items::before {
-    left: 7px;
-  }
-
-  .timeline-item:nth-child(odd) {
-    padding-right: 0;
-    text-align: left;
-  }
-
-  .timeline-item:nth-child(odd),
-  .timeline-item:nth-child(even) {
-    padding-left: 30px;
-  }
-
-  .timeline-dot {
-    left: 0;
-  }
-
-  .timeline-content {
-    padding: 20px;
-    border-radius: 2rem;
-  }
-
-  /* Skills section */
-  .skill-card {
-    width: 150px;
-    height: 150px;
-    margin: 0.8rem;
-    padding: 15px;
-  }
-
-  .skill-card img {
-    width: 60px;
-    height: 60px;
-  }
-
-  /* Project section */
-  .project-list {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin-top: 40px;
-    padding: 0;
-  }
-
-  .project-card h2 {
-    font-size: 22px;
-  }
-
-  .project-img {
-    height: 200px;
-    font-size: 50px;
-  }
-
-  .see-more {
-    padding: 12px 30px;
-    font-size: 16px;
-  }
-
-  /* Services section */
-  .services-list {
-    flex-direction: column;
-    gap: 25px;
-    margin: 40px 0;
-  }
-
-  .service-card {
-    width: 100%;
-    padding: 30px;
-  }
-
-  /* Contact section */
-  .contact-left,
-  .contact-right {
-    flex-basis: 100%;
-    padding: 0 15px;
-  }
-
-  .social-media {
-    margin-left: 0;
-    margin-top: 30px;
-  }
-
-  .contact-left p {
-    margin-left: 0;
-  }
-
-  .personal-details {
-    font-size: 18px;
-  }
-
-  .submit-btn {
-    width: 100%;
-    margin: 30px 0;
-    padding: 12px 20px;
-  }
-
-  form input,
-  form textarea {
-    padding: 12px;
-    margin: 10px 0;
-  }
-
-  /* Footer */
-  footer {
-    font-size: 16px;
-    padding: 15px;
-  }
+    html {
+        font-size: 60%;
+    }
+    #header {
+        padding: 1.2rem 5%;
+    }
+    .logo {
+        font-size: 1.8rem;
+    }
+    #menu-icon {
+        display: block;
+        font-size: 2.8rem;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    #navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        transition: 0.5s ease;
+        z-index: 1000;
+    }
+    #navbar.active {
+        right: 0;
+    }
+    #navbar ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .home {
+        flex-direction: column-reverse;
+        padding: 6rem 5% 2rem;
+        text-align: center;
+    }
+    .home-content {
+        max-width: 100%;
+        align-items: center;
+    }
+    .home-content h1 {
+        font-size: 3.8rem;
+        margin-top: 2rem;
+    }
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+    .text-animation {
+        min-width: 220px;
+        font-size: 2.2rem;
+    }
+    .home-content p {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .home-img {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+    .home-img img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .home-content .btn-group {
+        width: 100%;
+        height: 50px;
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    }
+    .btn-group a {
+        width: 100%;
+        height: 50px;
+    }
+    .subtitle,
+    .education-title,
+    .skills-title,
+    .project-title,
+    .services-title,
+    .contact-title {
+        font-size: 40px;
+    }
+    /* About section adjustments */
+    #about {
+        padding: 70px 10px 20px;
+    }
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    .about-col-1 img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    .about-col-2 h2 {
+        font-size: 2rem;
+    }
+    .about-col-2 p {
+        font-size: 1.5rem;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .about-details {
+        flex-direction: column;
+    }
+    .column-seperator {
+        width: 100%;
+        height: 2px;
+        margin: 15px 0;
+    }
+    .rows {
+        padding: 10px;
+    }
+    /* Timeline adjustments */
+    .timeline-items::before {
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 30px;
+    }
+    .timeline-dot {
+        left: 0;
+    }
+    .timeline-content {
+        padding: 20px;
+        border-radius: 2rem;
+    }
+    /* Skills section */
+    .skill-card {
+        width: 150px;
+        height: 150px;
+        margin: 0.8rem;
+        padding: 15px;
+    }
+    .skill-card img {
+        width: 60px;
+        height: 60px;
+    }
+    /* Project section */
+    .project-list {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 40px;
+        padding: 0;
+    }
+    .project-card h2 {
+        font-size: 22px;
+    }
+    .project-img {
+        height: 200px;
+        font-size: 50px;
+    }
+    .see-more {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    /* Services section */
+    .services-list {
+        flex-direction: column;
+        gap: 25px;
+        margin: 40px 0;
+    }
+    .service-card {
+        width: 100%;
+        padding: 30px;
+    }
+    /* Contact section */
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        padding: 0 15px;
+    }
+    .social-media {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .contact-left p {
+        margin-left: 0;
+    }
+    .personal-details {
+        font-size: 18px;
+    }
+    .submit-btn {
+        width: 100%;
+        margin: 30px 0;
+        padding: 12px 20px;
+    }
+    form input,
+    form textarea {
+        padding: 12px;
+        margin: 10px 0;
+    }
+    /* Footer */
+    footer {
+        font-size: 16px;
+        padding: 15px;
+    }
 }
 
+
 /* Fix for very small devices (iPhone SE, Galaxy Fold, etc.) */
+
 @media (max-width: 375px) {
-  html {
-    font-size: 55%;
-  }
+    html {
+        font-size: 55%;
+    }
+    .home-content h1 {
+        font-size: 3.2rem;
+    }
+    .home-content h3 {
+        font-size: 2rem;
+    }
+    .text-animation {
+        min-width: 200px;
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 32px;
+    }
+    .education-title,
+    .skills-title,
+    .project-title,
+    .services-title,
+    .contact-title {
+        font-size: 35px;
+    }
+    .skill-card {
+        width: 130px;
+        height: 130px;
+        margin: 0.6rem;
+        padding: 12px;
+    }
+    .skill-card img {
+        width: 50px;
+        height: 50px;
+    }
+    /* Fix button group on small screens */
+    .home-content .btn-group {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    }
+    .btn-group a {
+        width: 100%;
+        height: 50px;
+    }
+    .about-col-2 h2 {
+        font-size: 1.8rem;
+    }
+}
 
-  .home-content h1 {
-    font-size: 3.2rem;
-  }
 
-  .home-content h3 {
-    font-size: 2rem;
-  }
+/* Fix for landscape mode on mobile */
 
-  .text-animation {
-    min-width: 200px;
-    font-size: 2rem;
-  }
+@media (max-height: 500px) and (orientation: landscape) {
+    section {
+        min-height: auto;
+        padding: 50px 0;
+    }
+    .home {
+        padding: 50px 5%;
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .home-img img {
+        max-height: 200px;
+    }
+}
 
-  .subtitle,
-  .education-title,
-  .skills-title,
-  .project-title,
-  .services-title,
-  .contact-title {
-    font-size: 35px;
-  }
 
-  .skill-card {
-    width: 130px;
-    height: 130px;
-    margin: 0.6rem;
-    padding: 12px;
-  }
+/* Add these styles to fix the Education section spacing */
 
-  .skill-card img {
-    width: 50px;
-    height: 50px;
-  }
+
+/* Education section improvements */
+
+@media (max-width: 991px) {
+    .education-section {
+        padding: 50px 20px;
+    }
+    .timeline-content {
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .education-section {
+        padding: 50px 25px;
+    }
+    .timeline-items {
+        max-width: 90%;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 40px;
+    }
+    .timeline-content {
+        border-radius: 2rem;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .education-section {
+        padding: 40px 20px;
+    }
+}
+
+
+/* Add these styles to fix the Skills section size */
+
+
+/* Skills section improvements */
+
+@media (min-width: 768px) {
+    .skills-section {
+        height: auto;
+        min-height: auto;
+        padding: 80px 30px 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .skills-section {
+        height: auto;
+        min-height: auto;
+        padding: 70px 20px 80px;
+    }
+    .skills-container {
+        margin-top: 5%;
+        padding: 15px;
+    }
+    .skill-card {
+        width: 150px;
+        height: 150px;
+        margin: 0.8rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .skills-section {
+        padding: 60px 15px 70px;
+    }
+    .skills-container {
+        width: 100%;
+        padding: 10px;
+    }
+    .skill-card {
+        width: 130px;
+        height: 130px;
+        margin: 0.6rem;
+        padding: 15px;
+    }
+}
+
+
+/* Add these styles to fix the Projects section display */
+
+
+/* Projects section improvements */
+
+@media (min-width: 992px) {
+    .project-list {
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .project-section {
+        padding: 50px 20px;
+    }
+    .project-list {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin-top: 40px;
+        gap: 40px;
+    }
+    .project-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .project-img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 575px) {
+    .project-section {
+        padding: 40px 15px;
+    }
+    .project-list {
+        margin-top: 30px;
+        gap: 30px;
+    }
+}
+
+
+/* Add these styles to fix the Services section text size and alignment */
+
+
+/* Services section improvements */
+
+.services-section {
+    font-size: 18px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 5% 50px;
+}
+
+@media (max-width: 991px) {
+    .services-section {
+        font-size: 16px;
+        padding: 50px 20px;
+    }
+    .services-list {
+        gap: 50px;
+        margin: 5% 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-section {
+        font-size: 15px;
+        padding: 40px 15px;
+    }
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 5% 0;
+    }
+    .service-card {
+        width: 250px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .services-section {
+        font-size: 14px;
+    }
+    .service-card {
+        width: 220px;
+        padding: 25px;
+    }
+    .service-icon {
+        font-size: 50px;
+    }
+    .service-card h2 {
+        font-size: 22px;
+    }
+}
+
+
+/* Add these styles to fix the Contact section layout and sizes */
+
+
+/* Contact section improvements */
+
+.contact-section {
+    padding: 50px 5%;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-left {
+    flex-basis: 40%;
+}
+
+.contact-right {
+    flex-basis: 55%;
+}
+
+.personal-details {
+    font-size: 18px;
+}
+
+@media (min-width: 992px) {
+    .contact-section .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-section {
+        padding: 50px 20px;
+    }
+    .contact-section .row {
+        flex-direction: column;
+    }
+    .contact-right {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .contact-left {
+        width: 100%;
+        text-align: center;
+    }
+    .contact-left p {
+        margin-left: 0;
+    }
+    .personal-details {
+        font-size: 16px;
+    }
+    .social-media {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-section {
+        padding: 40px 15px;
+    }
+    .contact-title {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .personal-details {
+        font-size: 15px;
+    }
+    .contact-left p i {
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .social-media a {
+        font-size: 25px;
+    }
 }
